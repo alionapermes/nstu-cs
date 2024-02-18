@@ -17,6 +17,7 @@ build: prepare
 
 .PHONY: prepare
 prepare:
+	go mod download
 	if [[ ! -d ${TARGET_DIR} ]]; then \
 		mkdir ${TARGET_DIR}; \
 	fi
