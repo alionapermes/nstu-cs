@@ -40,9 +40,10 @@ func New() *UI {
 }
 
 // struct's method syntax:
-// func (<this> <struct-owner-type>) <name>([<args>]) <return-type>
+// func (<this> <struct-owner-type>) <name>([<args>]) [<return-type>]
 func (self *UI) init() *UI {
-	return self.initRect().
+	return self.
+		initRect().
 		initBtn().
 		initContainer()
 }
